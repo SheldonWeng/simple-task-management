@@ -1,0 +1,41 @@
+{
+  "name": "TaskExecuteRecord",
+  "fields": [
+    {
+      "fieldName": "userId",
+      "fieldType": "Long",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "startTime",
+      "fieldType": "ZonedDateTime",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "endTime",
+      "fieldType": "ZonedDateTime"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "task",
+      "otherEntityRelationshipName": "taskExecuteRecord",
+      "relationshipValidateRules": "required",
+      "relationshipName": "task",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20200607234347",
+  "javadoc": "Task execute record entity",
+  "entityTableName": "task_execute_record",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

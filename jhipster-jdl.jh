@@ -1,0 +1,44 @@
+/**
+ * Task entity
+ */
+entity Task {
+	userId Long required 
+	taskName String required minlength(2) maxlength(30)
+    taskStatus TaskStatus required
+    description String
+    createTime ZonedDateTime required
+    planStartTime ZonedDateTime
+    planEndTime ZonedDateTime
+}
+
+/**
+ * Task execute record entity
+ */
+entity TaskExecuteRecord {
+    userId Long required 
+    startTime ZonedDateTime required
+    endTime ZonedDateTime
+}
+
+/**
+ * Task status type enum
+ */
+enum TaskStatus {
+	TODO, DOING, PENDING, COMPLETED
+}
+
+relationship ManyToOne {
+	TaskExecuteRecord{task(id) required} to Task
+}
+
+// Set pagination options
+// paginate User, Task, TaskExecuteRecord with pagination
+
+// Use Data Transfert Objects (DTO)
+dto * with mapstruct except Gender, TaskStatus
+
+// Set service options to all except few
+service Task with serviceImpl 
+
+// Set an angular suffix
+// angularSuffix * with mySuffix

@@ -1,0 +1,53 @@
+{
+  "name": "Task",
+  "fields": [
+    {
+      "fieldName": "userId",
+      "fieldType": "Long",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "taskName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMinlength": "2",
+      "fieldValidateRulesMaxlength": "30"
+    },
+    {
+      "fieldName": "taskStatus",
+      "fieldType": "TaskStatus",
+      "fieldValues": "TODO,DOING,PENDING,COMPLETED",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createTime",
+      "fieldType": "ZonedDateTime",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "planStartTime",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "planEndTime",
+      "fieldType": "ZonedDateTime"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20200607234247",
+  "javadoc": "Task entity",
+  "entityTableName": "task",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

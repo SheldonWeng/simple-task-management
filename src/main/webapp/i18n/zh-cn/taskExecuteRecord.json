@@ -1,0 +1,25 @@
+{
+  "simpleTaskManagementApp": {
+    "taskExecuteRecord": {
+      "home": {
+        "title": "Task Execute Records",
+        "createLabel": "创建新 Task Execute Record",
+        "createOrEditLabel": "创建或编辑 Task Execute Record",
+        "notFound": "No Task Execute Records found"
+      },
+      "created": "Task Execute Record {{ param }} 创建成功",
+      "updated": "Task Execute Record {{ param }} 更新成功",
+      "deleted": "Task Execute Record {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Task Execute Record {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Task Execute Record"
+      },
+      "userId": "User Id",
+      "startTime": "Start Time",
+      "endTime": "End Time",
+      "task": "Task"
+    }
+  }
+}

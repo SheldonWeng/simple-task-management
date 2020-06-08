@@ -1,0 +1,25 @@
+{
+  "simpleTaskManagementApp": {
+    "taskExecuteRecord": {
+      "home": {
+        "title": "Task Execute Records",
+        "createLabel": "Create a new Task Execute Record",
+        "createOrEditLabel": "Create or edit a Task Execute Record",
+        "notFound": "No Task Execute Records found"
+      },
+      "created": "A new Task Execute Record is created with identifier {{ param }}",
+      "updated": "A Task Execute Record is updated with identifier {{ param }}",
+      "deleted": "A Task Execute Record is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Task Execute Record {{ id }}?"
+      },
+      "detail": {
+        "title": "Task Execute Record"
+      },
+      "userId": "User Id",
+      "startTime": "Start Time",
+      "endTime": "End Time",
+      "task": "Task"
+    }
+  }
+}

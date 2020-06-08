@@ -1,0 +1,11 @@
+{
+  "simpleTaskManagementApp": {
+    "TaskStatus": {
+      "null": "",
+      "TODO": "TODO",
+      "DOING": "DOING",
+      "PENDING": "PENDING",
+      "COMPLETED": "COMPLETED"
+    }
+  }
+}
